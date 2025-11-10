@@ -13,8 +13,10 @@ git clone <your-repo-link>
 cd <your-repo-folder>
 
 # 2. Install dependencies
-# Replace with actual installation commands
 pip install -r requirements.txt
 
-# 3. Run the system
-python main.py --input <path-to-sample-repo> --output <path-to-output-docs>
+# 3. Run the FastAPI server
+uvicorn main:app --reload
+
+# The API will be available at http://127.0.0.1:8000
+# Access documentation at http://127.0.0.1:8000/docs
